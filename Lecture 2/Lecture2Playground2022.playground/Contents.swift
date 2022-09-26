@@ -95,11 +95,36 @@
 // func1(a, b) -> Bool
 // func2(a, b) ----------- kviecia func1 ir tikrina ar dalinasi a ir b ir atprintina atitinkama zinute
 // kad dokumentuot funkcija spaudziam option + command + /
-var arTiesa: Bool = false
+//var arTiesa: Bool = false
+//
+//if arTiesa {
+//    print("Taip tikrai tiesa ")
+//}
+//else {
+//    print("Netiesa")
+//}
 
-if arTiesa {
-    print("Taip tikrai tiesa ")
+// Namu darbo sprendimas:
+
+func arDalinasi(a: Int, b: Int) -> Bool {
+    if a % b == 0 { // naudojam modulo operatoriu patikrinti ar skaiciai dalinasi
+        return true
+    } else {
+        return false
+    }
+    
+//    return a % b == 0 // antras budas siai funkcijai realizuoti
 }
-else {
-    print("Netiesa")
+
+func pasakytiArDalinasiSkaiciai(dalmuo: Int, daliklis: Int) {
+    let funkcijosRezultatas: Bool = arDalinasi(a: dalmuo, b: daliklis)
+    
+    if funkcijosRezultatas {
+        print("\(dalmuo) dalinasi is \(daliklis)")
+    } else {
+        print("\(dalmuo) nesidalina is \(daliklis)")
+    }
 }
+
+pasakytiArDalinasiSkaiciai(dalmuo: 30, daliklis: 6)
+
