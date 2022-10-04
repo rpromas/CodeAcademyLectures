@@ -9,12 +9,9 @@
 /* Begin PBXBuildFile section */
 		C174B9BD28E9F88B00586C80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B9BC28E9F88B00586C80 /* AppDelegate.swift */; };
 		C174B9BF28E9F88B00586C80 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B9BE28E9F88B00586C80 /* SceneDelegate.swift */; };
-		C174B9C128E9F88B00586C80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B9C028E9F88B00586C80 /* ViewController.swift */; };
 		C174B9C428E9F88B00586C80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C174B9C228E9F88B00586C80 /* Main.storyboard */; };
 		C174B9C628E9F88E00586C80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C174B9C528E9F88E00586C80 /* Assets.xcassets */; };
 		C174B9C928E9F88E00586C80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C174B9C728E9F88E00586C80 /* LaunchScreen.storyboard */; };
-		C174B9FA28EB5BAF00586C80 /* ZadintuvoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B9F828EB5BAF00586C80 /* ZadintuvoTableViewCell.swift */; };
-		C174B9FB28EB5BAF00586C80 /* ZadintuvoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C174B9F928EB5BAF00586C80 /* ZadintuvoTableViewCell.xib */; };
 		C174B9FD28ECAF5500586C80 /* KontaktuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174B9FC28ECAF5500586C80 /* KontaktuViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,13 +19,10 @@
 		C174B9B928E9F88B00586C80 /* ManoAntrojiPaskaita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManoAntrojiPaskaita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C174B9BC28E9F88B00586C80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C174B9BE28E9F88B00586C80 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C174B9C028E9F88B00586C80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C174B9C328E9F88B00586C80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C174B9C528E9F88E00586C80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C174B9C828E9F88E00586C80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C174B9CA28E9F88E00586C80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C174B9F828EB5BAF00586C80 /* ZadintuvoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZadintuvoTableViewCell.swift; sourceTree = "<group>"; };
-		C174B9F928EB5BAF00586C80 /* ZadintuvoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZadintuvoTableViewCell.xib; sourceTree = "<group>"; };
 		C174B9FC28ECAF5500586C80 /* KontaktuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KontaktuViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,13 +58,10 @@
 			children = (
 				C174B9BC28E9F88B00586C80 /* AppDelegate.swift */,
 				C174B9BE28E9F88B00586C80 /* SceneDelegate.swift */,
-				C174B9C028E9F88B00586C80 /* ViewController.swift */,
 				C174B9C228E9F88B00586C80 /* Main.storyboard */,
 				C174B9C528E9F88E00586C80 /* Assets.xcassets */,
 				C174B9C728E9F88E00586C80 /* LaunchScreen.storyboard */,
 				C174B9CA28E9F88E00586C80 /* Info.plist */,
-				C174B9F828EB5BAF00586C80 /* ZadintuvoTableViewCell.swift */,
-				C174B9F928EB5BAF00586C80 /* ZadintuvoTableViewCell.xib */,
 				C174B9FC28ECAF5500586C80 /* KontaktuViewController.swift */,
 			);
 			path = ManoAntrojiPaskaita;
@@ -136,7 +127,6 @@
 			files = (
 				C174B9C928E9F88E00586C80 /* LaunchScreen.storyboard in Resources */,
 				C174B9C628E9F88E00586C80 /* Assets.xcassets in Resources */,
-				C174B9FB28EB5BAF00586C80 /* ZadintuvoTableViewCell.xib in Resources */,
 				C174B9C428E9F88B00586C80 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,8 +138,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C174B9C128E9F88B00586C80 /* ViewController.swift in Sources */,
-				C174B9FA28EB5BAF00586C80 /* ZadintuvoTableViewCell.swift in Sources */,
 				C174B9BD28E9F88B00586C80 /* AppDelegate.swift in Sources */,
 				C174B9FD28ECAF5500586C80 /* KontaktuViewController.swift in Sources */,
 				C174B9BF28E9F88B00586C80 /* SceneDelegate.swift in Sources */,

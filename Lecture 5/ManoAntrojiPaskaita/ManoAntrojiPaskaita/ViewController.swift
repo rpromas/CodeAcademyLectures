@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         manoTableView.dataSource = self
         manoTableView.delegate = self
-        
+                
         manoTableView.register(UINib(nibName: "ZadintuvoTableViewCell", bundle: nil), forCellReuseIdentifier: "zadintuvoCell")
     }
     
@@ -60,9 +60,13 @@ extension ViewController: UITableViewDelegate {
             arIjungtas.remove(at: indexPath.row)
             tableView.reloadData()
         }
+        
+        
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+
         if arIjungtas[indexPath.row] {
             arIjungtas[indexPath.row] = false
         } else {
