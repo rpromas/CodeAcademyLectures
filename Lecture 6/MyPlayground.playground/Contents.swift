@@ -48,4 +48,3 @@ atspaudintAmziu(amzius: galYraAmzius ?? 0)
 func atspaudintAmziu(amzius: Int) {
     print("Amzius: \(amzius)")
 }
-
