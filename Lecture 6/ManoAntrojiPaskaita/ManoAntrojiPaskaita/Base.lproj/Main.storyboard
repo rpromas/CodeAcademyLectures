@@ -96,10 +96,37 @@
             </objects>
             <point key="canvasLocation" x="1521.7391304347827" y="-133.25892857142856"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="3Uj-et-4Fg">
+            <objects>
+                <viewController id="G7r-dw-GRv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cQQ-eN-oES">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ig4-JZ-heq">
+                                <rect key="frame" x="96" y="322" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Pmr-vR-RLG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ig4-JZ-heq" firstAttribute="leading" secondItem="Pmr-vR-RLG" secondAttribute="leading" constant="10" id="Q0x-VN-Okp"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D3U-Sk-Yj5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2394" y="-185"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

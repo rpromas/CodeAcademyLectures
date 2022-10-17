@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lecture11App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fGi-Lx-a47">
+                                <rect key="frame" x="8" y="262.5" width="398" height="591.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Oj-C5-XzK">
+                                <rect key="frame" x="12" y="219.5" width="390" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Prideti"/>
+                                <connections>
+                                    <segue destination="lhP-hb-I0G" kind="show" id="Cxk-k8-IzN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3Oj-C5-XzK" secondAttribute="trailing" constant="12" id="8hc-e2-K4C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fGi-Lx-a47" secondAttribute="trailing" constant="8" id="YPD-J0-MAK"/>
+                            <constraint firstItem="fGi-Lx-a47" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="Z3O-cZ-ZmX"/>
+                            <constraint firstItem="fGi-Lx-a47" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.66" id="Za0-2X-Rac"/>
+                            <constraint firstItem="fGi-Lx-a47" firstAttribute="top" secondItem="3Oj-C5-XzK" secondAttribute="bottom" constant="12" id="o1V-kA-J6f"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fGi-Lx-a47" secondAttribute="bottom" constant="8" id="u22-Ga-Tsy"/>
+                            <constraint firstItem="3Oj-C5-XzK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="uic-9Q-f9V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="fGi-Lx-a47" id="FaL-ve-VOC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="124.55357142857142"/>
+        </scene>
+        <!--Ivedimo View Controller-->
+        <scene sceneID="SPb-JN-LOU">
+            <objects>
+                <viewController id="lhP-hb-I0G" customClass="IvedimoViewController" customModule="Lecture11App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NSW-8f-3JB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bzQ-U5-F7k">
+                                <rect key="frame" x="12" y="56" width="390" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="efu-2J-ZbV">
+                                <rect key="frame" x="12" y="102" width="390" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOj-tR-ijN">
+                                <rect key="frame" x="12" y="148" width="390" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Prideti"/>
+                                <connections>
+                                    <action selector="didTapPrideti:" destination="lhP-hb-I0G" eventType="touchUpInside" id="pWK-ez-aPP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RJz-Ae-YUm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RJz-Ae-YUm" firstAttribute="trailing" secondItem="bzQ-U5-F7k" secondAttribute="trailing" constant="12" id="0Sd-uY-Fmb"/>
+                            <constraint firstItem="oOj-tR-ijN" firstAttribute="leading" secondItem="RJz-Ae-YUm" secondAttribute="leading" constant="12" id="27m-Ky-wvw"/>
+                            <constraint firstItem="efu-2J-ZbV" firstAttribute="leading" secondItem="RJz-Ae-YUm" secondAttribute="leading" constant="12" id="3F0-p2-UVN"/>
+                            <constraint firstItem="efu-2J-ZbV" firstAttribute="top" secondItem="bzQ-U5-F7k" secondAttribute="bottom" constant="12" id="BBz-l5-aIE"/>
+                            <constraint firstItem="bzQ-U5-F7k" firstAttribute="leading" secondItem="RJz-Ae-YUm" secondAttribute="leading" constant="12" id="KFX-iq-LKd"/>
+                            <constraint firstItem="RJz-Ae-YUm" firstAttribute="trailing" secondItem="oOj-tR-ijN" secondAttribute="trailing" constant="12" id="PmV-aA-qLi"/>
+                            <constraint firstItem="RJz-Ae-YUm" firstAttribute="trailing" secondItem="efu-2J-ZbV" secondAttribute="trailing" constant="12" id="QFx-FH-zGy"/>
+                            <constraint firstItem="oOj-tR-ijN" firstAttribute="top" secondItem="efu-2J-ZbV" secondAttribute="bottom" constant="12" id="XDf-jD-kj0"/>
+                            <constraint firstItem="bzQ-U5-F7k" firstAttribute="top" secondItem="RJz-Ae-YUm" secondAttribute="top" constant="12" id="xPP-wg-WSD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vsB-bX-nX4"/>
+                    <connections>
+                        <outlet property="telTextField" destination="efu-2J-ZbV" id="h7u-4l-Ken"/>
+                        <outlet property="vardoTextField" destination="bzQ-U5-F7k" id="Fxc-1K-fCK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LJM-zo-JhW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021.7391304347827" y="128.57142857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

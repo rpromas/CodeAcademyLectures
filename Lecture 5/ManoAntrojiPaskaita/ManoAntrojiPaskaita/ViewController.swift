@@ -44,7 +44,7 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "zadintuvoCell", for: indexPath) as! ZadintuvoTableViewCell
         
-        cell.laikasLabel.text = "\(laikaiMinutemis[indexPath.row] / 60) : \(laikaiMinutemis[indexPath.row] % 60)"
+        cell.laikasLabel.text = "Nagi kagi mano laikas siuo atveju yra va toks va: Nagi kagi mano laikas siuo atveju yra va toks va: Nagi kagi mano laikas siuo atveju yra va toks va: Nagi kagi mano laikas siuo atveju yra va toks va: Nagi kagi mano laikas siuo atveju yra va toks va: \(laikaiMinutemis[indexPath.row] / 60) : \(laikaiMinutemis[indexPath.row] % 60)"
         // budas kaip rodyt pvz 04:05 (su nuliais prieky)
 //        cell.laikasLabel.text = String(format: "%02d : %02d", laikai[indexPath.row] / 60, laikai[indexPath.row] % 60)
         cell.arIjungtasSwitch.isOn = arIjungtas[indexPath.row]
